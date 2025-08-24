@@ -22,7 +22,7 @@ A Django-based Content Management System with service oriented architecture.
 Wait until OpenSearch is ready. Look for this log before continuing:
 [cms-node] publish_address {172.21.0.4:9300}, bound_addresses {[::]:9300}
 
-2- Start the app services (Django server, Celery workers, Discovery indexer/web):
+2- Start the app services (Django server, Celery workers, Discovery indexer/web) - all tests will run automatically in the Django server before starting it:
 
 **docker-compose up -d server celery discovery_indexer discovery_web --build**
 
